@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <!--problem:  need to convert back and forth between celsius and fahrenheit-->
+    <!--1. find out what the conversion formula is in math.-->
+        <!--F = c.value *9/5 + 32 and then C = f.value-32)*5/9-->
+        
+        
+    <!--2. desing an interaction with the use to get their numbers.-->
+    <!--    this was accomplished through the use of a form for users input in a slightly -->
+        <!--controlled way-->
+    <!--3.have the results show back up in the window when they hit the-->
+    <style>
+        fieldset{
+        text-align: center;
+            border: 3px solid black;
+        }
+     
+    </style>
+    <link rel="stylesheet" href="./skeleton.css/" type="text/css" />
+     <link rel="stylesheet" href="./normalize.css" type="text/css" />
+<script>
+function convert(degree) {
+    if (degree == "C") {
+        F = document.getElementById("c").value * 9 / 5 + 32;
+        document.getElementById("f").value = Math.round(F);
+    } else	{
+        C = (document.getElementById("f").value -32) * 5 / 9;
+        document.getElementById("c").value = Math.round(C);
+    }
+}
+</script>
+</head>
+
+<body>
+    <fieldset>
+        <form>
+    <h4> Hi, Please enter your number into either the fahrenheit  or Celscius Boxes . </h4>
+    <label for ="c">Enter your Celscius here</label>
+        <input id="c" onkeyup="convert('C')"> ˚ C<br><br>
+         is equal to<br> <br><br>
+        <label for ="f">Fahrenheit can Be found here:</label>
+        <input id="f" onkeyup="convert('F')"> ˚F
+        </form>
+            <!--problem:  need to convert back and forth between celsius and fahrenheit-->
+    <!--1. find out what the conversion formula is in math.-->
+        <!--F = c.value *9/5 + 32 and then C = f.value-32)*5/9-->
+        
+        
+    <!--2. desing an interaction with the use to get their numbers.-->
+    <!--    this was accomplished through the use of a form for users input in a slightly -->
+        <!--controlled way-->
+    <!--3.have the results show back up in the window when they hit the-->
+    </fieldset>
+</body>
+
+
+
+</html>

@@ -1,0 +1,10 @@
+var total = 0;
+var numbers = [2,5,3,4];
+
+numbers.forEach(function(num){
+  total += num;
+});
+
+console.log(total);
+
+

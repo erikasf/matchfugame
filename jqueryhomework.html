@@ -1,0 +1,101 @@
+<!document html>
+
+<html>
+    <head>
+        <style>
+            #container {
+  background:rgb(255,255,153);
+  height: 700px;
+  width: 700px;
+  padding-top: 20px;
+  border: 2px solid;
+  border-color: black;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+.row {
+  height: 160px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:10px;
+  width: 93%;
+//  border: 2px solid;
+//  border-color: black;
+}
+
+.box {
+  width: 23.8%;
+  height: 90%;
+  margin: 4px 0px 4px 7px;
+  background: orange;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  float: left;
+}
+
+.boxType1 {
+  background: red;
+}
+
+.boxType2 {
+  background: green;
+}
+
+.boxType3 {
+  background: blue;
+}
+        </style>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="boxes.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Boxes!</title> 
+        
+    </head>
+
+
+
+<body>
+     <script>
+    $( document ).ready(function() {
+    alert( "ready!" );
+});
+  </script>
+  <div id="container">
+     <div id="row1" class="row">
+       <div class="box boxType1"></div>
+       <div class="box boxType2"></div>
+       <div class="box boxType3"></div>
+       <div class="box boxType1"></div>
+     </div>
+     <div id="row2" class="row">
+        <div class="box boxType2"></div>
+        <div class="box boxType3"></div>
+        <div class="box boxType1"></div>
+        <div class="box boxType2"></div>
+     </div>
+     <div id="row3" class="row">
+        <div class="box boxType3"></div>
+        <div id="secretBox" class="box boxType1"></div>
+        <div class="box boxType2"></div>
+        <div class="box boxType3"></div>
+     </div>
+     <div id="row4" class="row">
+        <div class="box boxType1"></div>
+        <div class="box boxType2"></div>
+        <div class="box boxType3"></div>
+        <div class="box boxType1"></div>
+     </div>
+  </div>
+ 
+</body>
+
+</html>
+    
+    
+    
+    
+    
+</html>
